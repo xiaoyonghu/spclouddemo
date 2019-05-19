@@ -1,0 +1,27 @@
+spring:
+  application:
+    name: config-service
+  cloud:
+    config:
+      server:
+        git:
+          uri: https://gitee.com/gfdsghdhgrfdg/config_cloud
+          username: 2826755215@qq.com
+          password: 2826755215lovexu
+          timeout: 5
+          default-label: master
+
+
+server:
+  port: 9100
+
+
+eureka:
+  client:
+    serviceUrl:
+      #defaultZone: http://172.26.196.216:8761/eureka/
+      defaultZone: http://localhost:8761/eureka/
+  instance:
+    instance-id: ${spring.cloud.client.ip-address}:${server.port}
+    prefer-ip-address: true
+

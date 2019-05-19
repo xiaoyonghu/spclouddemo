@@ -1,0 +1,25 @@
+spring:
+  application:
+    name: api-gataway
+  cloud:
+    config:
+      discovery:
+        service-id: CONFIG-SERVICE
+        enabled: true
+      profile: dev
+
+server:
+  port: 9000
+
+#指定服务注册中心，以及自己实例的访问方式
+eureka:
+  client:
+    serviceUrl:
+      #defaultZone: http://172.26.196.216:8761/eureka/
+      defaultZone: http://localhost:8761/eureka/
+  instance:
+    instance-id: ${spring.cloud.client.ip-address}:${server.port}
+    prefer-ip-address: true
+
+
+
