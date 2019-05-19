@@ -1,2 +1,2 @@
 # spclouddemo
-初学者的demo
+初学者的springclouddemo
