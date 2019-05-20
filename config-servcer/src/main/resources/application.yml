@@ -6,8 +6,8 @@ spring:
       server:
         git:
           uri: https://gitee.com/gfdsghdhgrfdg/config_cloud
-          username: 2826755215@qq.com
-          password: 2826755215lovexu
+          username: xxxxxxx
+          password: xxxxxx
           timeout: 5
           default-label: master
 
